@@ -6,7 +6,7 @@ import { createTrip } from "@/lib/actions/create-trip"
 import { UploadButton } from "@/lib/uploadthing"
 import { cn } from "@/lib/utils"
 import Image from "next/image"
-import { startTransition, useState, useTransition } from "react"
+import { useState, useTransition } from "react"
 
 export default function Addnew(){
     const [isPending,StartTransition]=useTransition()

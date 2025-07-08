@@ -25,9 +25,9 @@ export default function GlobeFunction(){
                const response= await fetch('/api/trips')
                const data=await response.json()
                setLocations(data)
-               const countries=new Set<string>(data.map((loc:TranformedLocation)=>(
+               const countries=new Set<string>(data.map((loc:TranformedLocation)=>
                 loc.country
-               )))
+               ))
                setVisitedCounntries(countries)
             } catch (error) {
                 console.log('error',error)
