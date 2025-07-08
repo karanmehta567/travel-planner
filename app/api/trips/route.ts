@@ -37,6 +37,7 @@ export async function GET(){
     }))
     return NextResponse.json(transLocation)
     } catch (error) {
+        console.log(error)
         return new NextResponse('Some error occcured',{status:404})
     }
 }
